@@ -697,6 +697,7 @@ highlights.generate_syntax = function(palette, options)
     ["@variable.member"] = { link = "TSField" },
     ["@variable.member.yaml"] = { link = "yamlTSField" },
     ["@variable.parameter"] = { link = "TSParameter" },
+    ["@@spell.markdown"] = syntax_entry(palette.none, palette.none),
 
     -- LSP Semantic token highlights
     ["@lsp.type.boolean"] = { link = "@boolean" },
