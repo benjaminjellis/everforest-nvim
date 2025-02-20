@@ -157,30 +157,10 @@ highlights.generate_syntax = function(palette, options)
     QuickFixLine = syntax_entry(palette.purple, palette.none, { styles.bold }),
     Search = syntax_entry(palette.bg0, palette.green),
     SpecialKey = syntax_entry(palette.yellow, palette.none),
-    SpellBad = syntax_entry(
-      options.spell_foreground and palette.red or palette.none,
-      palette.none,
-      { styles.undercurl },
-      palette.red
-    ),
-    SpellCap = syntax_entry(
-      options.spell_foreground and palette.blue or palette.none,
-      palette.none,
-      { styles.undercurl },
-      palette.blue
-    ),
-    SpellLocal = syntax_entry(
-      options.spell_foreground and palette.aqua or palette.none,
-      palette.none,
-      { styles.undercurl },
-      palette.aqua
-    ),
-    SpellRare = syntax_entry(
-      options.spell_foreground and palette.purple or palette.none,
-      palette.none,
-      { styles.undercurl },
-      palette.purple
-    ),
+    SpellBad = syntax_entry(options.spell_foreground and palette.red or palette.none, palette.none),
+    SpellCap = syntax_entry(options.spell_foreground and palette.blue or palette.none, palette.none),
+    SpellLocal = syntax_entry(options.spell_foreground and palette.aqua or palette.none, palette.none),
+    SpellRare = syntax_entry(options.spell_foreground and palette.purple or palette.none, palette.none),
     StatusLine = syntax_entry(palette.grey1, options.transparent_background_level == 2 and palette.none or palette.bg2),
     StatusLineNC = syntax_entry(
       options.transparent_background_level == 2 and palette.grey0 or palette.grey1,
