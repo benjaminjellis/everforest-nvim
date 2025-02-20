@@ -475,7 +475,7 @@ highlights.generate_syntax = function(palette, options)
     TSNone = { link = "Fg" },
     TSNumber = { link = "Purple" },
     TSOperator = { link = "Orange" },
-    TSParameter = { link = "Fg" },
+    TSParameter = syntax_entry(palette.fg, palette.none, { styles.italic }),
     TSParameterReference = { link = "Fg" },
     TSPreProc = { link = "PreProc" },
     TSProperty = { link = "Blue" },
