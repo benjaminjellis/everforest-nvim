@@ -699,6 +699,9 @@ highlights.generate_syntax = function(palette, options)
     ["@variable.parameter"] = { link = "TSParameter" },
     ["@@spell.markdown"] = syntax_entry(palette.none, palette.none),
 
+    -- New Treesitter highlights (Rust specific)
+    ["@variable.parameter.rust"] = syntax_entry(palette.fg, palette.none, { styles.italic }),
+
     -- LSP Semantic token highlights
     ["@lsp.type.boolean"] = { link = "@boolean" },
     ["@lsp.type.builtinConstant"] = { link = "@constant.builtin" },
