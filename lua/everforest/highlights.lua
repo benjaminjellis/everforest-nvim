@@ -697,11 +697,11 @@ highlights.generate_syntax = function(palette, options)
     ["@variable.member"] = { link = "TSField" },
     ["@variable.member.yaml"] = { link = "yamlTSField" },
     ["@variable.parameter"] = { link = "TSParameter" },
-    ["@@spell.markdown"] = syntax_entry(palette.none, palette.none),
+    ["@spell.markdown"] = syntax_entry(palette.none, palette.none),
 
     -- New Treesitter highlights (Rust specific)
     ["@variable.parameter.rust"] = syntax_entry(palette.fg, palette.none, { styles.italic }),
-    ["@punctuation.delimiter.rust"] = { link = "Oragne" },
+    ["@punctuation.delimiter.rust"] = { link = "Orange" },
 
     -- LSP Semantic token highlights
     ["@lsp.type.boolean"] = { link = "@boolean" },
