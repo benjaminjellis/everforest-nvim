@@ -480,7 +480,7 @@ highlights.generate_syntax = function(palette, options)
     TSPreProc = { link = "PreProc" },
     TSProperty = { link = "Blue" },
     TSPunctBracket = { link = "Fg" },
-    TSPunctDelimiter = { link = "Grey" },
+    TSPunctDelimiter = { link = "Orange" },
     TSPunctSpecial = { link = "Blue" },
     TSRepeat = { link = "Red" },
     TSStorageClass = { link = "Orange" },
@@ -699,7 +699,7 @@ highlights.generate_syntax = function(palette, options)
     ["@variable.parameter"] = { link = "TSParameter" },
     ["@spell.markdown"] = syntax_entry(palette.none, palette.none),
 
-    -- New Treesitter highlights (Rust specific)
+    -- New Treesitter highlights (ust specific)
     ["@variable.parameter.rust"] = syntax_entry(palette.fg, palette.none, { styles.italic }),
     ["@punctuation.delimiter.rust"] = { link = "Orange" },
 
