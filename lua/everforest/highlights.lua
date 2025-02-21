@@ -701,6 +701,7 @@ highlights.generate_syntax = function(palette, options)
 
     -- New Treesitter highlights (Rust specific)
     ["@variable.parameter.rust"] = syntax_entry(palette.fg, palette.none, { styles.italic }),
+    ["@punctuation.delimiter.rust"] = { link = "Oragne" },
 
     -- LSP Semantic token highlights
     ["@lsp.type.boolean"] = { link = "@boolean" },
