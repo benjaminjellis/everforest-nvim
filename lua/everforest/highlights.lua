@@ -116,7 +116,7 @@ highlights.generate_syntax = function(palette, options)
     EndOfBuffer = syntax_entry((options.show_eob and palette.bg4) or palette.bg0, palette.none),
     TermCursor = { link = "Cursor" },
     TermCursorNC = { link = "Cursor" },
-    ErrorMsg = syntax_entry(palette.red, palette.none, { styles.bold, styles.underline }),
+    ErrorMsg = syntax_entry(palette.red, palette.none, { styles.bold }),
     WinSeparator = { link = "VertSplit" },
     Folded = syntax_entry(palette.grey1, transparency_respecting_colour(palette.bg1)),
     FoldColumn = syntax_entry(
